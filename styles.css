@@ -1,0 +1,700 @@
+/* ================================
+   BASIC RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f3f0;
+    color: #171717;
+    padding: 35px;
+}
+
+
+/* ================================
+   MAIN GRID
+================================ */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.35fr 1fr;
+
+    grid-template-rows:
+        270px
+        220px
+        220px;
+
+    gap: 28px;
+}
+
+
+/* ================================
+   COMMON CARD
+================================ */
+
+.card {
+    position: relative;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 28px;
+    line-height: 0.98;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+
+/* ================================
+   CARD COLORS
+================================ */
+
+.cream {
+    background: #f8e9d8;
+}
+
+.hero {
+    background: #157c70;
+    color: white;
+}
+
+.mint {
+    background: #d8eee8;
+}
+
+.yellow {
+    background: #f7c95e;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.orange {
+    background: #ff9b5b;
+}
+
+
+/* ================================
+   FIRST CARD
+================================ */
+
+.cream h2 {
+    margin-top: 38px;
+}
+
+.cream h2 span {
+    color: #157c70;
+    font-style: italic;
+}
+
+.cream button {
+    margin-top: 35px;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 14px 25px;
+
+    background: #157c70;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.plane {
+    position: absolute;
+
+    right: 65px;
+    bottom: 65px;
+
+    font-size: 30px;
+
+    transform: rotate(-15deg);
+}
+
+
+/* ================================
+   HERO CARD
+================================ */
+
+.hero h1 {
+    margin-top: 22px;
+
+    font-size: 52px;
+    line-height: 0.95;
+}
+
+.hero h1 span {
+    color: #ffd45b;
+    font-style: italic;
+}
+
+.stars {
+    margin-top: 25px;
+
+    color: #ffd45b;
+
+    font-size: 22px;
+
+    letter-spacing: 4px;
+}
+
+.hero p {
+    margin-top: 8px;
+    color: #eeeeee;
+}
+
+
+/* ================================
+   DESTINATION CARD
+================================ */
+
+.mint h2 {
+    margin-bottom: 20px;
+}
+
+.destination-box {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 14px;
+}
+
+.destination-box h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.destination {
+    display: grid;
+
+    grid-template-columns: 35px 1fr auto;
+
+    align-items: center;
+
+    padding: 9px 0;
+
+    border-top: 1px solid #eeeeee;
+
+    font-size: 12px;
+}
+
+.destination span {
+    font-size: 20px;
+}
+
+.destination small {
+    color: #888888;
+}
+
+.description {
+    margin-top: 15px;
+
+    line-height: 1.3;
+}
+
+
+/* ================================
+   YELLOW CARD
+================================ */
+
+.yellow h2 span {
+    color: #157c70;
+    font-style: italic;
+}
+
+.chat-box {
+    position: absolute;
+
+    left: 20px;
+    right: 20px;
+    bottom: -5px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 14px;
+}
+
+.message {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background: #f9e8e8;
+
+    border-radius: 12px;
+
+    padding: 9px;
+
+    font-size: 11px;
+}
+
+.reply {
+    margin-top: 7px;
+
+    background: #fff0d4;
+
+    border-radius: 12px;
+
+    padding: 9px;
+
+    font-size: 10px;
+}
+
+.up-arrow {
+    position: absolute;
+
+    right: 25px;
+    bottom: 65px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #f7c95e;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   PROFILE CARD
+================================ */
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.profile-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #f8d56f;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+.profile strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+.profile small {
+    display: block;
+
+    color: #888;
+
+    font-size: 9px;
+
+    margin-top: 2px;
+}
+
+.location-icon {
+    margin-left: auto;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #e4eee9;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-text {
+    margin-top: 22px;
+}
+
+
+/* ================================
+   ORANGE CARD
+================================ */
+
+.orange h2 {
+    font-size: 27px;
+}
+
+.calendar {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 0;
+
+    background: white;
+
+    border-radius: 12px 12px 0 0;
+}
+
+.calendar-header {
+    background: #157c70;
+
+    color: white;
+
+    padding: 11px;
+
+    font-size: 11px;
+}
+
+.calendar-header span {
+    float: right;
+}
+
+.calendar-days {
+    display: flex;
+
+    justify-content: space-around;
+
+    padding: 14px;
+}
+
+.calendar-days span {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #d8eee8;
+
+    color: #157c70;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   MAP CARD
+================================ */
+
+.map {
+    position: relative;
+
+    width: 100%;
+    height: 125px;
+
+    background: #eef7ef;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    margin-bottom: 17px;
+}
+
+.road {
+    position: absolute;
+
+    width: 150%;
+
+    height: 25px;
+
+    background: white;
+
+    transform: rotate(-20deg);
+}
+
+.road-one {
+    top: 45px;
+    left: -50px;
+}
+
+.road-two {
+    top: 90px;
+    left: -20px;
+
+    transform: rotate(15deg);
+}
+
+.pin {
+    position: absolute;
+
+    z-index: 2;
+
+    font-size: 25px;
+}
+
+.pin-one {
+    left: 30px;
+    top: 20px;
+}
+
+.pin-two {
+    right: 45px;
+    top: 45px;
+}
+
+.pin-three {
+    left: 50%;
+    bottom: 5px;
+}
+
+.map-card h2 {
+    font-size: 25px;
+}
+
+.map-card p {
+    margin-top: 12px;
+
+    line-height: 1.35;
+}
+
+
+/* ================================
+   STATISTICS CARD
+================================ */
+
+.statistics h1 {
+    color: #157c70;
+
+    font-size: 58px;
+}
+
+.statistics h3 {
+    font-size: 20px;
+
+    line-height: 1.1;
+}
+
+.people {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+}
+
+.people span {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #f7c95e;
+
+    border: 3px solid white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-left: -8px;
+
+    font-size: 21px;
+}
+
+
+/* ================================
+   BOTTOM CARD
+================================ */
+
+.bottom-card {
+    grid-column: span 2;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-stat {
+    width: 220px;
+
+    background: white;
+
+    color: #171717;
+
+    border-radius: 18px;
+
+    padding: 18px;
+}
+
+.travel-stat small {
+    display: block;
+
+    color: #888;
+
+    font-size: 11px;
+}
+
+.travel-stat strong {
+    display: block;
+
+    font-size: 24px;
+
+    margin-top: 3px;
+}
+
+.chart {
+    height: 65px;
+
+    display: flex;
+
+    align-items: end;
+
+    gap: 7px;
+
+    margin-top: 5px;
+}
+
+.chart i {
+    display: block;
+
+    width: 19px;
+
+    background: #157c70;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.chart i:nth-child(1) {
+    height: 25px;
+}
+
+.chart i:nth-child(2) {
+    height: 38px;
+}
+
+.chart i:nth-child(3) {
+    height: 52px;
+}
+
+.chart i:nth-child(4) {
+    height: 43px;
+}
+
+.chart i:nth-child(5) {
+    height: 60px;
+}
+
+.bottom-card h2 {
+    font-size: 35px;
+
+    line-height: 0.95;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: auto;
+    }
+
+    .hero {
+        grid-column: span 2;
+    }
+
+    .bottom-card {
+        grid-column: span 2;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .hero,
+    .bottom-card {
+        grid-column: span 1;
+    }
+
+    .card {
+        min-height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .bottom-card {
+        display: block;
+    }
+
+    .travel-stat {
+        margin-bottom: 20px;
+    }
+
+    .bottom-card h2 {
+        font-size: 30px;
+    }
+}
